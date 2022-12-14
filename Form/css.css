@@ -1,0 +1,151 @@
+.container {
+
+    /* max-width: 1000px;
+    margin: 0 auto; */
+
+    display: flex;
+    /* margin-top: 260px; */
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .form input[type="number"]::placeholder:focus{
+    color: blue;
+    transform: skew(28deg, 0deg);
+
+} */
+::placeholder{
+    /* color: blue; */
+    opacity: 1;
+    transform: skew(28deg, 0deg);
+    
+
+}
+::placeholder:focus{
+    transform: skew(28deg, 0deg);
+
+}
+::-ms-input-placeholder{
+    /* color: blue; */
+}
+:-ms-input-placeholder{
+    /* color: blue; */
+
+/* }
+.number{
+    color: #e13d31;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+    transform: skew(28deg, 0deg);
+
+}
+input:active::-webkit-input-placeholder {
+    /* transform: skew(28deg, 0deg);
+    color: #e13d31; */
+
+} */
+.input::placeholder:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+/* ::placeholder:focus{
+    color: blue;
+    opacity: 1;
+    transform: skew(28deg, 0deg);
+
+} */
+/* .img{
+    opacity: 1;
+    transform: skew(10deg, 10deg)
+
+} */
+
+.input {
+    background-color: rgb(213, 213, 220);
+    font-size: 24px;
+    width: 330px;
+    /* width: 330px; */
+    /* height: 80px; */
+    padding-left: 20px;
+    
+
+    border: 2px solid white;
+    padding: 0px 60px 0px 36px;
+
+}
+.input::-ms-value{
+    transform: skew(28deg, 0deg);
+
+}
+.input::-webkit-progress-value{
+    transform: skew(28deg, 0deg);
+
+}
+.input::-webkit-meter-optimum-value{
+    transform: skew(28deg, 0deg);
+
+}
+/* .input:focus{
+   
+    transform: skew(28deg, 0deg);
+
+
+}  */
+
+.button {
+    font-size: 24px;
+    background-color: #f44336;
+    border: 2px solid white;
+    color: white;
+
+    padding-top: 25px;
+    padding-bottom: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.button p {
+    transform: skew(28deg, 0deg);
+    margin: 0;
+}
+.button:hover {
+    background-color: #e13d31;
+    cursor: pointer;
+    border: 2px solid rgb(235, 221, 65);
+}
+
+.form {
+    display: flex; 
+    transform: skew(-28deg, 0deg)
+        /* border: 2px solid white;
+    width: fit-content; */
+}
+@media(max-width: 640px) {
+    .form{
+    display: flex; 
+    transform: none;
+
+
+    }
+    .button p{
+    transform: none;
+
+    }
+    ::placeholder{
+        /* color: blue; */
+        opacity: 1;
+        transform: none;
+    
+    }
+    .input {
+        width: 100%;
+        padding: 0px 0px 0px px;
+    
+    }
+}
